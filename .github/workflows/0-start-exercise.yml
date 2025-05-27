@@ -113,7 +113,7 @@ jobs:
 
       - name: Build welcome message from template
         id: build-issue-description
-        uses: skills/action-text-variables@v1
+        uses: skills/action-text-variables@main
         with:
           template-file: skills-response-templates/step-feedback/welcome.md
           template-vars: |
@@ -156,7 +156,7 @@ jobs:
 
       - name: Build comment - add step content
         id: build-comment
-        uses: skills/action-text-variables@v1
+        uses: skills/action-text-variables@main
         with:
           template-file: ${{ env.STEP_1_FILE }}
           template-vars: |
