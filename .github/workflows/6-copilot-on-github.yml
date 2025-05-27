@@ -100,7 +100,7 @@ jobs:
 
       - name: Build message - congratulations
         id: build-message-congratulations
-        uses: skills/action-text-variables@v1
+        uses: skills/action-text-variables@main
         with:
           template-file: skills-response-templates/readme/congratulations.md
           template-vars: |
@@ -122,7 +122,7 @@ jobs:
 
       - name: Build message - exercise finished
         id: build-finish-message
-        uses: skills/action-text-variables@v1
+        uses: skills/action-text-variables@main
         with:
           template-file: skills-response-templates/step-feedback/lesson-finished.md
           template-vars: |
