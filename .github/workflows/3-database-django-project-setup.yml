@@ -112,7 +112,7 @@ jobs:
 
       - name: Build message - step results
         id: build-message-step-results
-        uses: skills/action-text-variables@v1
+        uses: skills/action-text-variables@main
         with:
           template-file: skills-response-templates/step-feedback/step-results.md
           template-vars: '{
@@ -142,7 +142,7 @@ jobs:
 
       - name: Build message - step finished
         id: build-message-step-finish
-        uses: skills/action-text-variables@v1
+        uses: skills/action-text-variables@main
         with:
           template-file: skills-response-templates/step-feedback/step-finished-prepare-next-step.md
           template-vars: |
